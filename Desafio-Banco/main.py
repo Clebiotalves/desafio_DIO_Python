@@ -1,7 +1,7 @@
 print('=-=' * 10)
 print(' '* 8 + 'Sejá bem vindo')
-print('=-='* 10)
-menu ='''Escolha uma das opções:
+print('=-=' * 10)
+menu = '''Escolha uma das opções:
    [1] Depositar
    [2] Sacar
    [3] Extrato
@@ -11,7 +11,7 @@ menu ='''Escolha uma das opções:
 saldo = 0
 limite = 500
 extrato = ''
-numero_saques =0
+numero_saques = 0
 limite_saques = 3
 
 while True:
@@ -54,13 +54,13 @@ while True:
             print('Operação falhou!O valor informado é inválido. ')
 
     elif opcao == 3:
-        print('=' *15 +' EXTRATO '+ '='* 15)
+        print('=' * 15 + ' EXTRATO ' + '=' * 15)
         print('Não foram realizados movimentações.'if not extrato else extrato)
         print(f'\nSaldo: R${saldo:.2f}')
-        print('='*40)
+        print('=' * 40)
 
     elif opcao == 4:
-        print('=-='*12)
+        print('=-=' * 12)
         print('Obrigado por utlizar nossos serviços')
         print('=-=' * 12)
         break
